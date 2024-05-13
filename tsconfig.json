@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "commonjs",
+    "resolveJsonModule": true,
+    "declaration": true,
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true
+  },
+  "include": ["src/**/*", "eslint.config.js", "bot.config.ts"]
+}

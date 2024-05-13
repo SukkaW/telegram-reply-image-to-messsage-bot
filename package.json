@@ -1,0 +1,27 @@
+{
+  "name": "telegram-le-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --format=sukka ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "telegraf": "^4.16.3",
+    "typescript": "^5.4.5",
+    "unconfig": "^0.3.13"
+  },
+  "devDependencies": {
+    "@eslint-sukka/node": "^6.0.0-beta.7",
+    "@eslint-sukka/ts": "^6.0.0-beta.7",
+    "@types/node": "^20.12.11",
+    "eslint": "^9.2.0",
+    "eslint-config-sukka": "^6.0.0-beta.7",
+    "eslint-formatter-sukka": "^6.0.0-beta.7"
+  },
+  "packageManager": "pnpm@8.15.8+sha256.691fe176eea9a8a80df20e4976f3dfb44a04841ceb885638fe2a26174f81e65e"
+}

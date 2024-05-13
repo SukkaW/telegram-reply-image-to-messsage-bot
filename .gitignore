@@ -1,0 +1,7 @@
+node_modules
+types
+dist
+.temp
+.env
+.env.*
+bot.config.ts
