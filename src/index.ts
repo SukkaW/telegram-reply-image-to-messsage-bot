@@ -59,17 +59,17 @@ const isGroupChat = (type: Chat['type']): boolean => {
       if (!allowedGroupIds.has(ctx.chat.id)) {
         return;
       }
-      if (!ctx.message.reply_to_message) {
-        return;
+      if (ctx.message.reply_to_message) {
+        const replyToMessageId = ctx.message.reply_to_message.message_id;
+        return ctx.telegram.sendPhoto(ctx.chat.id, Input.fromURL(url), {
+          reply_parameters: {
+            message_id: replyToMessageId,
+            chat_id: ctx.chat.id,
+            allow_sending_without_reply: false
+          }
+        });
       }
-      const replyToMessageId = ctx.message.reply_to_message.message_id;
-      return ctx.telegram.sendPhoto(ctx.chat.id, Input.fromURL(url), {
-        reply_parameters: {
-          message_id: replyToMessageId,
-          chat_id: ctx.chat.id,
-          allow_sending_without_reply: false
-        }
-      });
+      return ctx.replyWithPhoto(Input.fromURL(url));
     });
   });
 
