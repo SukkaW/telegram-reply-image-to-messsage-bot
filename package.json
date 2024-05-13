@@ -1,13 +1,16 @@
 {
-  "name": "telegram-le-bot",
-  "version": "1.0.0",
-  "private": true,
+  "name": "telegram-reply-image-to-message-bot",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "lint": "eslint --format=sukka .",
     "dev": "node -r @swc-node/register --files src/index.ts",
-    "build": "ncc build src/index.ts --minify --transpile-only -o dist"
+    "build": "ncc build src/index.ts --minify --transpile-only -o dist",
+    "prepublishOnly": "pnpm run build"
   },
   "keywords": [],
   "author": "",
