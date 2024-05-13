@@ -76,9 +76,11 @@ const isGroupChat = (type: Chat['type']): boolean => {
   // Enable graceful stop
   process.once('SIGINT', () => {
     console.log('[*] SIGINT received');
+    bot.stop('SIGINT');
   });
   process.once('SIGTERM', () => {
     console.log('[*] SIGTERM received');
+    bot.stop('SIGTERM');
   });
 
   console.log('[*] Bot booting up...');
