@@ -5,7 +5,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint --format=sukka ."
+    "lint": "eslint --format=sukka .",
+    "dev": "node -r @swc-node/register --files src/index.ts",
+    "build": "ncc build src/index.ts --minify --transpile-only -o dist"
   },
   "keywords": [],
   "author": "",
@@ -18,11 +20,12 @@
   "devDependencies": {
     "@eslint-sukka/node": "^6.0.0-beta.7",
     "@eslint-sukka/ts": "^6.0.0-beta.7",
+    "@swc-node/register": "^1.9.1",
     "@types/node": "^20.12.11",
+    "@vercel/ncc": "^0.38.1",
     "eslint": "^9.2.0",
     "eslint-config-sukka": "^6.0.0-beta.7",
-    "eslint-formatter-sukka": "^6.0.0-beta.7",
-    "ncc": "^0.3.6"
+    "eslint-formatter-sukka": "^6.0.0-beta.7"
   },
-  "packageManager": "pnpm@8.15.8+sha256.691fe176eea9a8a80df20e4976f3dfb44a04841ceb885638fe2a26174f81e65e"
+  "packageManager": "pnpm@9.1.1"
 }
