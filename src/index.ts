@@ -12,9 +12,9 @@ export interface Config {
 
 export const defineBotConfig = (cfg: Config) => cfg;
 
-const isGroupChat = (type: Chat['type']): boolean => {
+function isGroupChat(type: Chat['type']): boolean {
   return type === 'group' || type === 'supergroup';
-};
+}
 
 (async () => {
   const { config } = await loadConfig<Config>({

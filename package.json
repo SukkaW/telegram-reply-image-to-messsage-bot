@@ -17,18 +17,17 @@
   "license": "ISC",
   "dependencies": {
     "telegraf": "^4.16.3",
-    "typescript": "^5.4.5",
+    "typescript": "^6.0.3",
     "unconfig": "^0.3.13"
   },
   "devDependencies": {
-    "@eslint-sukka/node": "^6.0.0-beta.7",
-    "@eslint-sukka/ts": "^6.0.0-beta.7",
-    "@swc-node/register": "^1.9.1",
-    "@types/node": "^20.12.11",
-    "@vercel/ncc": "^0.38.1",
-    "eslint": "^9.2.0",
-    "eslint-config-sukka": "^6.0.0-beta.7",
-    "eslint-formatter-sukka": "^6.0.0-beta.7"
+    "@eslint-sukka/node": "^8.14.2",
+    "@swc-node/register": "^1.12.1",
+    "@types/node": "^20.19.43",
+    "@vercel/ncc": "^0.38.4",
+    "eslint": "^10.8.0",
+    "eslint-config-sukka": "^8.14.2",
+    "eslint-formatter-sukka": "^8.14.2"
   },
-  "packageManager": "pnpm@9.1.1"
+  "packageManager": "pnpm@11.20.0"
 }
