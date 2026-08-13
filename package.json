@@ -21,13 +21,13 @@
     "unconfig": "^0.3.13"
   },
   "devDependencies": {
-    "@eslint-sukka/node": "^8.14.2",
+    "@eslint-sukka/node": "^9.0.1",
     "@swc-node/register": "^1.12.1",
     "@types/node": "^20.19.43",
-    "@vercel/ncc": "^0.38.4",
-    "eslint": "^10.8.0",
-    "eslint-config-sukka": "^8.14.2",
-    "eslint-formatter-sukka": "^8.14.2"
+    "@vercel/ncc": "^0.44.1",
+    "eslint": "^10.8.1",
+    "eslint-config-sukka": "^9.0.1",
+    "eslint-formatter-sukka": "^9.0.1"
   },
-  "packageManager": "pnpm@11.20.0"
+  "packageManager": "pnpm@11.21.0"
 }
