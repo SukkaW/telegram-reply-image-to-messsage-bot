@@ -1,7 +1,6 @@
 import { loadConfig } from 'unconfig';
 
 import { Input, Telegraf } from 'telegraf';
-import type { Chat } from 'telegraf/typings/core/types/typegram';
 // import { message } from 'telegraf/filters';
 
 export interface Config {
@@ -12,7 +11,7 @@ export interface Config {
 
 export const defineBotConfig = (cfg: Config) => cfg;
 
-function isGroupChat(type: Chat['type']): boolean {
+function isGroupChat(type: 'private' | 'group' | 'supergroup'): boolean {
   return type === 'group' || type === 'supergroup';
 }
 
